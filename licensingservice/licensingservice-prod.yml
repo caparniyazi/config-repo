@@ -1,3 +1,6 @@
+# When the Spring framework does property resolution, it will always look for the property in the default properties first, and then   
+# override the default with an environment-specific value if one is present.
+
 example.property: "I AM A PROD PROPERTY OVERRIDE"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform:  "postgres"
