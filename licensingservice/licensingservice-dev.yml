@@ -1,3 +1,10 @@
+# When the Spring framework does property resolution, it will always look for the property in the default properties first, and then   
+# override the default with an environment-specific value if one is present.
+
+# In concrete terms, if you define a property in the licensingservice.yml file and
+# don’t define it in any of the other environment configuration files (for example, the
+# licensingservice-dev.yml), the Spring framework will use the default value.
+
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform:  "postgres"
 spring.jpa.show-sql: "true"
